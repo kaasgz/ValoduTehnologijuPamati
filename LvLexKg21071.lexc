@@ -3,24 +3,61 @@ Multichar_Symbols
         +N      ! Noun tag
         +Sg     ! Singular
         +Pl     ! Plural
-        +Nom    ! kas?
-        +Gen    ! kā?
-        +Dat    ! kam?
-        +Acc    ! ko?
-        +Loc    ! kur?
-
+        +Nom
+        +Gen
+        +Dat
+        +Acc
+        +Loc
 
 !Define root lexicon
 LEXICON Root
-    Nouns ; ! No input, no output
+        Nouns ; ! No input, no output
 
-LEXICON Noun
 
+!Define noun lexicon
+LEXICON Nouns
+
+!Parastie piemēri - 3gb katrai deklinācijai
 kok N1dekl ;
 krēsl N1dekl ;
 sol N1dekl ;
 
+med N3dekl ;
+led N3dekl ;
+tirg N3dekl ;
 
+māj N4dekl ;
+mās N4dekl ;
+dien N4dekl ;
+
+egl N5dekl ;
+krūz N5dekl ;
+sēn N5dekl ;
+
+pil N6dekl ;
+kūt N6dekl ;
+ac N6dekl ;
+
+  !Aizstāšanai
+pūzn N2dekl ;
+zut N2dekl ;
+bried N2dekl ;
+
+  !Iespraušanai
+gulb N2dekl ;
+kurm N2dekl ;
+krup N2dekl ;
+piekab N5dekl ;
+zem N5dekl ;
+virv N5dekl ;
+
+  !Izņēmumi
+akmens N2dekl ;
+
+!kopdzimte
+bende N5dekl
+
+! Define 4th declension paradigm
 
 LEXICON N1dekl
     +N+Sg+Nom:^s   # ;
@@ -34,7 +71,7 @@ LEXICON N1dekl
     +N+Pl+Acc:^us  # ;
     +N+Pl+Loc:^os  # ;
 
-LEXICON N2dekl					
+LEXICON N2dekl
     +N+Sg+Nom:^is   # ;
     +N+Sg+Gen:^Ma   # ;
     +N+Sg+Dat:^im   # ;
@@ -58,7 +95,7 @@ LEXICON N3dekl
     +N+Pl+Acc:^us  #;
     +N+Pl+Loc:^os  #;
 
-LEXICON N4dekl					
+LEXICON N4dekl
     +N+Sg+Nom:^a  #;
     +N+Sg+Gen:^as #;
     +N+Sg+Dat:^ai #;
