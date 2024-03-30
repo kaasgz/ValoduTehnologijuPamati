@@ -1,3 +1,4 @@
+!Define all symbols consisting of multiple characters
 Multichar_Symbols
         +N      ! Noun tag
         +Sg     ! Singular
@@ -43,6 +44,9 @@ pil N6dekl ;
 kūt N6dekl ;
 ac N6dekl ;
 
+
+
+
   !Iespraušanai
 gulb N2dekl ;
 kurm N2dekl ;
@@ -55,10 +59,16 @@ pūzn N2dekl ;
   !Izņēmumi
 akmen N2dekl ;
 
+  !Daudzskatlinieki
+bikse DSK;
+šķēre DSK;
+durvi DSK;
+ļaudi DSK;
+
   !kopdzimte
 bend N5dekl ;
 
-! Define declination paradigms
+! Define declension paradigms
 
 LEXICON N1dekl
     +N+Sg+Nom:^s   # ;
@@ -131,3 +141,10 @@ LEXICON N6dekl
     +N+Pl+Dat:^īm  #;
     +N+Pl+Acc:^is  #;
     +N+Pl+Loc:^īs  #;
+
+LEXICON DSK
+        +N+Pl+Nom:^s  #;
+        +N+Pl+Gen:^Mu  #;
+        +N+Pl+Dat:^Mm #;
+        +N+Pl+Acc:^s #;
+        +N+Pl+Loc:^Ms #;
